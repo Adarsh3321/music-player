@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <i class="material-icons" id="expand">expand_more</i>
+            <span>Now Playing</span>
+            <i class="material-icons" id="symbol">music_note</i>
+
+        </div>
+
+        <div class="img-area">
+            <img src="" alt="">
+        </div>
+
+        <div class="song-details">
+            <p class="name">Tu Hai Kahan</p>
+            <p class="artist">Uraan</p>
+
+        </div>
+
+        <div class="progress-area">
+            <div class="progress-bar">
+            </div>
+            <div class="timer">
+                <span class="current">0:00</span>
+                <span class="duration"></span>
+            </div>
+            <audio src="" id="main-audio"></audio>
+        </div>
+
+        <div class="controls">
+            <i id="repeat-plist" class="material-icons">repeat</i>
+            <i  class="material-icons" id="prev">skip_previous</i>
+            <div class="play-pause">
+                <i class="material-icons">play_arrow</i>
+            </div>
+            <i class="material-icons" id="next">skip_next</i>
+            <i class="material-icons" id="more-music">queue_music</i>
+        </div>
+
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class="material-icons">queue_music</i>
+                    <span>Music List</span>
+                </div>
+                <i id="close" class="material-icons">close</i>
+            </div>
+            <ul>
+            </ul>
+        </div>
+         </div>
+     <script src="script.js" defer></script>
+    <script src="music-list.js"></script>
+    
+</body>
+
+</html>
